@@ -3,7 +3,7 @@
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- Edit here: select main class to run test suite -->
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <property name="junit.class.name" value="sample.SuiteTest"/>
+    <property name="junit.class.name" value="sample.SuiteThirdTest"/>
 
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- PLEASE DO NOT EDIT FROM HERE TO END OF FILE -->

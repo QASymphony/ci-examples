@@ -11,5 +11,5 @@ import sample.junit.*;
 @Suite.SuiteClasses({
         CalculatorFuncTest.class
 })
-public class SuitTest {
+public class SuiteTest {
 }

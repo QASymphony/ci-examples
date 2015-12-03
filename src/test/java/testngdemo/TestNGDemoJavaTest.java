@@ -30,6 +30,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class TestNGDemoJavaTest {
     @BeforeSuite
@@ -84,6 +85,13 @@ public class TestNGDemoJavaTest {
     @Test(dataProvider = "dp1")
     public void verifyAddFunc(int a, int b, int expected) {
         assertEquals(expected, testadd(a, b));
+    }
+	
+	@Test(dataProvider = "dp1")
+    public void verifyAddFuncBySoftAssert(int a, int b, int expected) {
+		SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(expected, testadd(a, b));		
+		softAssert.assertAll();
     }
 
     List<String> mylist = Arrays.asList("123", "456");

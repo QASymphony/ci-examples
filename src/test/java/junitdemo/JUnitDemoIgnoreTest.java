@@ -22,7 +22,8 @@ import java.util.List;
 
 import org.junit.*;
 
-public class JUnitDemoJavaTest {
+@Ignore
+public class JUnitDemoIgnoreTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -58,22 +59,18 @@ public class JUnitDemoJavaTest {
         System.out.println(mylist);
         assertEquals(2, mylist.size());
     }
-	
-	@Ignore("Test is ignored as a demonstration")
+		
 	@Test
 	public void testSame() {
 		assertEquals(1, 2);
 	}
-
-	@Ignore("Test is ignored as a demonstration")
+	
 	@Test
 	public void testSomething() 
 	{ 
 		System.out.println("Sorry this test will not run, its ignored"); 
 	}
-	
-	//test case ignore and will not execute
-    @Ignore
+		
 	@Test
     public void ignoreTest() {
         System.out.println("in ignore test");

@@ -46,15 +46,17 @@ public class JUnitDemoJavaTest {
 
     List<String> mylist = Arrays.asList("123", "456");
 
+	@Ignore("Test is ignored as a demonstration")
     @Test
-    public void listLength1() {
+    public void testListLength1() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
         assertEquals(3, mylist.size());
     }
 
+	@Ignore("Test is ignored as a demonstration")
     @Test
-    public void listLength2() {
+    public void testListLength2() {
         System.out.println(mylist);
         assertEquals(2, mylist.size());
     }

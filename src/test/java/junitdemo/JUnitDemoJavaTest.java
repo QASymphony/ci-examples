@@ -66,7 +66,7 @@ public class JUnitDemoJavaTest {
 	@Ignore("Test is ignored as a demonstration")
 	@Test
 	public void testSame() {
-		assertThat(1, is(1));
+		assertEquals(1, 2);
 	}
 
 	@Ignore 

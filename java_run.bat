@@ -1,1 +1,0 @@
-java -Dfile.encoding=utf-8 -cp "D:\Demo\junit-sample\libs\*;D:\Demo\junit-sample\target\*"; org.junit.runner.JUnitCore "sample.SuitTest"

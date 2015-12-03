@@ -48,31 +48,31 @@ public class JUnitDemoIgnoreTest {
     List<String> mylist = Arrays.asList("123", "456");
 
     @Test
-    public void listLength1() {
+    public void listLength4() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
         assertEquals(3, mylist.size());
     }
 
     @Test
-    public void listLength2() {
+    public void listLength3() {
         System.out.println(mylist);
         assertEquals(2, mylist.size());
     }
 		
 	@Test
-	public void testSame() {
+	public void testSame1() {
 		assertEquals(1, 2);
 	}
 	
 	@Test
-	public void testSomething() 
+	public void testSomething1() 
 	{ 
 		System.out.println("Sorry this test will not run, its ignored"); 
 	}
 		
 	@Test
-    public void ignoreTest() {
+    public void ignoreTest5() {
         System.out.println("in ignore test");
     }
 }

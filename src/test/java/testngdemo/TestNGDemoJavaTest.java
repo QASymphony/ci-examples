@@ -74,7 +74,7 @@ public class TestNGDemoJavaTest {
 
     @DataProvider(name = "dp1")
     public Object[][] dp1() {
-        return new Object[][] { { 1, 2, 3 }, { 14, 15, 20 }, { 6, 7, 13 } };
+        return new Object[][] { { 1, 12, 3 }, { 14, 15, 20 }, { 6, 17, 13 } };
     }
 
     int testadd(int a, int b) {

@@ -20,11 +20,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 public class JUnitDemoJavaTest {
 
@@ -69,10 +65,16 @@ public class JUnitDemoJavaTest {
 		assertEquals(1, 2);
 	}
 
-	@Ignore 
-	@Test 
+	@Ignore("Test is ignored as a demonstration")
+	@Test
 	public void testSomething() 
 	{ 
 		System.out.println("Sorry this test will not run, its ignored"); 
 	}
+	
+	//test case ignore and will not execute
+    @Ignore
+    public void ignoreTest() {
+        System.out.println("in ignore test");
+    }
 }

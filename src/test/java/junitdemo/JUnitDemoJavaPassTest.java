@@ -50,13 +50,12 @@ public class JUnitDemoJavaPassTest {
     public void testFeature1() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
-        assertEquals(3, mylist.size());
+        assertEquals(2, mylist.size());
     }
 	
     @Test
-    public void testFeature2() {
-        System.out.println(mylist);
-        assertEquals(2, mylist.size());
+    public void testFeature2() {        
+        assertEquals(2, 2);
     }
 	
 	@Ignore("Test is ignored as a demonstration")
@@ -64,7 +63,7 @@ public class JUnitDemoJavaPassTest {
     public void testFeature3() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
-        assertEquals(3, mylist.size());
+        assertEquals(2, mylist.size());
     }
 	
 	@Ignore("Test is ignored as a demonstration")

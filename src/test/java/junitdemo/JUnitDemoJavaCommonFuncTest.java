@@ -57,7 +57,7 @@ public class JUnitDemoJavaCommonFuncTest {
     @Test
     public void testPassedFeature() {
         System.out.println(mylist);
-        assertEquals(3, mylist.size());
+        assertEquals(2, mylist.size());
     }
 		
 	@Test

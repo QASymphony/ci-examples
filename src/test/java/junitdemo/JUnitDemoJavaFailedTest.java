@@ -51,7 +51,7 @@ public class JUnitDemoJavaFailedTest {
     public void testFailedFeature() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
-        assertEquals(2, mylist.size());
+        assertEquals(5, mylist.size());
     }
 
 	@Ignore("Test is ignored as a demonstration")

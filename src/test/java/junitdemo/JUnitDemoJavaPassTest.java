@@ -22,7 +22,7 @@ import java.util.List;
 
 import org.junit.*;
 
-public class JUnitDemoJavaTestCommonFunc {
+public class JUnitDemoJavaPassTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -45,30 +45,32 @@ public class JUnitDemoJavaTestCommonFunc {
     }
 
     List<String> mylist = Arrays.asList("123", "456");
-
-	@Ignore("Test is ignored as a demonstration")
+	
     @Test
-    public void testCommonIgnoreFeature() {
+    public void testFeature1() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
         assertEquals(3, mylist.size());
     }
 	
     @Test
-    public void testPassedFeature() {
+    public void testFeature2() {
+        System.out.println(mylist);
+        assertEquals(2, mylist.size());
+    }
+	
+	@Ignore("Test is ignored as a demonstration")
+	@Test
+    public void testFeature3() {
+        mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
         assertEquals(3, mylist.size());
     }
-		
-	@Test
-	public void testFailedFeature() {
-		assertEquals(1, 2);
-	}
-
-	@Test
-	public void testFailedSecondFeature() 
-	{ 
-		assertEquals(5, 2);
-	}
 	
+	@Ignore("Test is ignored as a demonstration")
+    @Test
+    public void testFeature4() {
+        System.out.println(mylist);
+        assertEquals(2, mylist.size());
+    }
 }

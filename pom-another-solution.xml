@@ -85,8 +85,8 @@
               <junitArtifactName>none:none</junitArtifactName>
               <testNGArtifactName>org.testng:testng</testNGArtifactName>
             </configuration>
-          </execution -->
-        </executions>
+          </execution>
+        </executions -->
       </plugin>
     </plugins>
   </build>

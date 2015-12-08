@@ -47,28 +47,28 @@ public class JUnitDemoJavaPassTest {
     List<String> mylist = Arrays.asList("123", "456");
 	
     @Test
-    public void testFeature1() {
+    public void testPassFeature1() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
-        assertEquals(2, mylist.size());
-    }
-	
-    @Test
-    public void testFeature2() {        
-        assertEquals(2, 2);
+        assertEquals(3, mylist.size());
     }
 	
 	@Ignore("Test is ignored as a demonstration")
 	@Test
-    public void testFeature3() {
+    public void testIgnoreFeature2() {
         mylist = Arrays.asList("abc", "def", "ghi");
         System.out.println(mylist);
         assertEquals(2, mylist.size());
     }
 	
+    @Test
+    public void testPassFeature3() {        
+        assertEquals(2, 2);
+    }	
+	
 	@Ignore("Test is ignored as a demonstration")
     @Test
-    public void testFeature4() {
+    public void testIgnoreFeature4() {
         System.out.println(mylist);
         assertEquals(2, mylist.size());
     }

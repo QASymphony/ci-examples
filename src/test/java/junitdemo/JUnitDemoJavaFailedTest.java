@@ -45,8 +45,7 @@ public class JUnitDemoJavaFailedTest {
     }
 
     List<String> mylist = Arrays.asList("123", "456");
-
-	@Ignore("Test is ignored as a demonstration")
+	
     @Test
     public void testFailedFeature() {
         mylist = Arrays.asList("abc", "def", "ghi");

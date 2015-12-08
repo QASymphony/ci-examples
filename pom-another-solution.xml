@@ -65,7 +65,7 @@
         <version>2.13</version>
         <configuration>
 		  <testFailureIgnore>true</testFailureIgnore>
-          <reportsDirectory>${project.build.directory}/surefire-reports/junit</reportsDirectory>
+          <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
           <testNGArtifactName>none:none</testNGArtifactName>
           <includes>
             <!-- for JUnit, explicitly add xxxSpec and xxxTest file patterns. -->
@@ -74,19 +74,19 @@
             <include>**/*Test.java</include>
           </includes>
         </configuration>
-        <!-- executions>
+        <executions>
           <execution>
             <phase>test</phase>
             <goals>
               <goal>test</goal>
             </goals>
             <configuration>
-              <reportsDirectory>${project.build.directory}/surefire-reports/testng</reportsDirectory>
+              <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
               <junitArtifactName>none:none</junitArtifactName>
               <testNGArtifactName>org.testng:testng</testNGArtifactName>
             </configuration>
           </execution>
-        </executions -->
+        </executions>
       </plugin>
     </plugins>
   </build>

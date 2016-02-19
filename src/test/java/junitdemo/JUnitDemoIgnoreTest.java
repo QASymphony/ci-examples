@@ -44,6 +44,9 @@ public class JUnitDemoIgnoreTest {
     @After
     public void tearDown() throws Exception {
         System.out.println(Thread.currentThread() + " - tearDown()");
+        System.out.println("----------------------------------------------");
+        System.out.println("--------- DEVELOP ------------------------------");
+        System.out.println("----------------------------------------------");
     }
 
     List<String> mylist = Arrays.asList("123", "456");

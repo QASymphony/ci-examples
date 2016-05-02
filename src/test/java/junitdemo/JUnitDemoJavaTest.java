@@ -75,7 +75,6 @@ public class JUnitDemoJavaTest {
 	}
 	
 	//test case ignore and will not execute
-    @Ignore
 	@Test
     public void ignoreTest() {
         System.out.println("in ignore test");

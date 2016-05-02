@@ -79,4 +79,8 @@ public class JUnitDemoJavaTest {
     public void ignoreTest() {
         System.out.println("in ignore test");
     }
+    	@Test
+    public void noignoreTestDemo() {
+        System.out.println("in no ignore test");
+    }
 }

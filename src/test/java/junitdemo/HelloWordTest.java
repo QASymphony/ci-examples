@@ -1,7 +1,6 @@
 package junitdemo;
 
 import org.junit.*;
-import sample.utils.CommonUtils;
 
 /**
  * Created by duongnapham on 3/5/15.
@@ -10,14 +9,14 @@ public class HelloWordTest {
 
     @Before
     public void beforeEachTest() {
-        System.out.println("......Waiting.... .. at "  + CommonUtils.getCurrentDate());
+        System.out.println("......Waiting.... .. ");
         System.out.println("This is executed before each Test");
     }
 
     @After
     public void afterEachTest() {
         System.out.println("This is executed after each Test");
-        System.out.println("......END --- Waiting.... .. at "  + CommonUtils.getCurrentDate());
+        System.out.println("......END --- Waiting.... .. " );
     }
 
     @Test

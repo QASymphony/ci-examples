@@ -7,7 +7,7 @@ import skilledmonter.example.SimpleCalculator;
 /**
  * Created by duongnapham on 1/10/18.
  */
-public class TestNGAnnotationExceptionExample {
+public class TestNGAnnotationExceptionExampleTest {
     public CalculatorService service;
 
     @BeforeClass

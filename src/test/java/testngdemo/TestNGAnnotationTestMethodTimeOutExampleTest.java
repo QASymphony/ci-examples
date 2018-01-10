@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 /**
  * Created by duongnapham on 1/10/18.
  */
-public class TestNGAnnotationTestMethodTimeOutExample {
+public class TestNGAnnotationTestMethodTimeOutExampleTest {
     @Test(timeOut = 2000)
     public void timeOutTestMethodOne() throws InterruptedException {
         Thread.sleep(5000);

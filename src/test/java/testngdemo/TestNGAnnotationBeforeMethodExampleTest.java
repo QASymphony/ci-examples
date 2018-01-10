@@ -6,7 +6,7 @@ import org.testng.annotations.*;
 /**
  * Created by duongnapham on 1/10/18.
  */
-public class TestNGAnnotationBeforeMethodExample {
+public class TestNGAnnotationBeforeMethodExampleTest {
     @BeforeMethod
     public void setUp() {
         System.out.println("@BeforeMethod: The annotated method will be run before each test method.");

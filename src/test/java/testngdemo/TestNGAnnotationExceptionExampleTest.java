@@ -1,5 +1,6 @@
 package testngdemo;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 import skilledmonter.example.CalculatorService;
 import skilledmonter.example.SimpleCalculator;
@@ -25,7 +26,21 @@ public class TestNGAnnotationExceptionExampleTest {
 
     @Test(expectedExceptions = ArithmeticException.class)
     public void testSum() {
-        System.out.println("@Test : testDiv()");
+        System.out.println("@Test : testSum()");
         int result = service.sum(1, 0);
+    }
+
+    @Test(enabled = false)
+    public void testMultiply() {
+        System.out.println("@Test : testMultiple() -> enable=false");
+        int result = service.multiply(10, 5);
+        Assert.assertEquals(result, 50);
+    }
+
+    @Test
+    public void testSub() {
+        System.out.println("@Test : testSub()");
+        int result = service.sub(10, 5);
+        Assert.assertEquals(result, 5);
     }
 }

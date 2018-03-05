@@ -21,7 +21,7 @@ node {
       archive 'target/*.jar'
    }
    stage('qTestJenkinsPlugin'){
-       submitJUnitTestResultsToqTest([apiKey: '256ca053-f0df-4097-beac-742cfbbbcc7d', containerID: 1148479, containerType: 'test-cycle', createNewTestRunsEveryBuildDate: true, createTestCaseForEachJUnitTestClass: true, environmentID: 0, overwriteExistingTestSteps: true, parseTestResultsFromTestingTools: false, parseTestResultsPattern: '', projectID: 73985, qtestURL: 'https://qtestlaunch.qtestnet.com', submitToExistingContainer: true])
+       submitJUnitTestResultsToqTest([apiKey: '256ca053-f0df-4097-beac-742cfbbbcc7d', containerID: 1948696, containerType: 'test-suite', createNewTestRunsEveryBuildDate: true, createTestCaseForEachJUnitTestClass: false, createTestCaseForEachJUnitTestMethod: true, environmentID: 34843, overwriteExistingTestSteps: true, parseTestResultsFromTestingTools: true, projectID: 73985, qtestURL: 'https://qtestlaunch.qtestnet.com', submitToAReleaseAsSettingFromQtest: false, submitToExistingContainer: true, utilizeTestResultsFromCITool: false])
 
    }
 }
